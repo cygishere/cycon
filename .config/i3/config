@@ -164,4 +164,4 @@ bindsym Print exec --no-startup-id "flameshot gui"
 
 # Startup programs
 exec --no-startup-id "xmodmap ~/.xmodmaprc"
-exec --no-startup-id "xcape -t 90 -e 'Control_L=Escape'"
+exec --no-startup-id "xcape -t 100 -e 'Control_L=Escape'"
