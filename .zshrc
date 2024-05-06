@@ -23,6 +23,7 @@ ZSH_THEME_RANDOM_IGNORED=(
   wezm
   theunraveler
   fwalch
+  apple
 )
 
 # Uncomment the following line to use case-sensitive completion.
