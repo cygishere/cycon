@@ -110,6 +110,8 @@ fi
 # Example aliases
 alias l="ls -lah"
 alias t="tree"
+alias reboot="systemctl reboot"
+alias poweroff="systemctl poweroff"
 
 # .config management
 # This amazing solution is copied from here:
