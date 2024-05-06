@@ -164,4 +164,4 @@ alias t="tree"
 # 
 # and then proceed as before.
 ################################################################################
-alias cygconf='/usr/bin/git --git-dir=$HOME/.cygconf/ --work-tree=$HOME'
+alias cycon='/usr/bin/git --git-dir=$HOME/.cygconf/ --work-tree=$HOME'
