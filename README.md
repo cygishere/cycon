@@ -14,14 +14,14 @@ Original post:
 >                                                                              
 >where my ~/.myconf directory is a git bare repository. Then any file within   
 >the home folder can be versioned with normal commands like:                   
->                                                                              
+>```shell                                                                              
 >    config status                                                             
 >    config add .vimrc                                                         
 >    config commit -m "Add vimrc"                                              
 >    config add .config/redshift.conf                                          
 >    config commit -m "Add redshift config"                                    
 >    config push                                                               
->                                                                              
+>```                                                                              
 >And so one…                                                                   
 >                                                                              
 >No extra tooling, no symlinks, files are tracked on a version control system, 
