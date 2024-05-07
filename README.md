@@ -32,9 +32,9 @@ Original post:
 >                                                                              
 >To complete the description of the workflow (for others), you can replicate   
 >your home directory on a new machine using the following command:             
->                                                                              
+>```shell                                                                              
 >   git clone --separate-git-dir=~/.myconf /path/to/repo ~                     
->                                                                              
+>```                                                                              
 >This is the best solution I've seen so far, and I may adopt it next time I get
 >the itch to reconfigure my environment.                                       
 
@@ -43,10 +43,12 @@ Original post:
 > For posterity, note that this will fail if your home directory isn't empty. To
 > get around that, clone the repo's working directory into a temporary directory
 > first and then delete that directory,
-> 
+>```shell 
 >     git clone --separate-git-dir=$HOME/.myconf /path/to/repo $HOME/myconf-tmp
 >     cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules
 >     rm -r ~/myconf-tmp/
 >     alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-> 
+>``` 
 > and then proceed as before.
+
+In cycon, the alias will be named `cycon`.
