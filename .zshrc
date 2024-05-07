@@ -23,6 +23,10 @@ ZSH_THEME_RANDOM_IGNORED=(
   wezm
   theunraveler
   fwalch
+  miloshadzic
+  awesomepanda
+  robbyrussell
+  zhann
 )
 
 # Uncomment the following line to use case-sensitive completion.
@@ -97,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='emacs -bg black'
+  export EDITOR='emacs'
 fi
 
 # Compilation flags
