@@ -163,6 +163,4 @@ bindsym $mod+e exec --no-startup-id "emacs -bg black"
 bindsym Print exec --no-startup-id "flameshot gui"
 
 # Startup programs
-exec --no-startup-id "xmodmap ~/.xmodmaprc"
-exec --no-startup-id "xcape -t 120 -e 'Control_L=Escape'"
 
