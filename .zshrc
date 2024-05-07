@@ -25,10 +25,12 @@ ZSH_THEME_RANDOM_IGNORED=(
   fwalch
   miloshadzic
   awesomepanda
+  wedisagree
   robbyrussell
   zhann
   apple
   jnrowe
+  humza
 )
 
 # Uncomment the following line to use case-sensitive completion.
