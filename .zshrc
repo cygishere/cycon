@@ -127,4 +127,4 @@ alias poweroff="systemctl poweroff"
 # https://news.ycombinator.com/item?id=11071754
 #
 # Part of the original post is copied to ~/README.md
-alias cycon='/usr/bin/git --git-dir=$HOME/.cygconf/ --work-tree=$HOME'
+alias cycon='/usr/bin/git --git-dir=$HOME/.cycon/ --work-tree=$HOME'
