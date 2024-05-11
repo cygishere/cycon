@@ -16,22 +16,6 @@ export ZSH_THEME_RANDOM_QUIET=true
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-ZSH_THEME_RANDOM_IGNORED=(
-  rgm
-  frontcube
-  cloud
-  wezm
-  theunraveler
-  fwalch
-  miloshadzic
-  awesomepanda
-  wedisagree
-  robbyrussell
-  zhann
-  apple
-  jnrowe
-  humza
-)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,10 +71,7 @@ ZSH_THEME_RANDOM_IGNORED=(
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  colored-man-pages
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,11 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='emacs'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -117,14 +98,23 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export QT_QPA_PLATFORMTHEME=qt5ct 
+
+alias d="dict -d wn"
 alias l="ls -lah"
 alias t="tree"
-alias reboot="systemctl reboot"
-alias poweroff="systemctl poweroff"
+alias uda="udiskie-mount -a"
+alias uua="udiskie-umount -a"
+alias ads="source ~/pyvenv/ds/bin/activate"
+alias adv="source ~/pyvenv/cdev/bin/activate"
+alias ala="alacritty --working-directory"
+alias updatemirrors="sudo reflector --latest 50 --sort rate --protocol http,https \
+--save /etc/pacman.d/mirrorlist --threads 10"
 
-# .config management
-# This amazing solution is copied from here:
-# https://news.ycombinator.com/item?id=11071754
-#
-# Part of the original post is copied to ~/README.md
-alias cycon='/usr/bin/git --git-dir=$HOME/.cycon/ --work-tree=$HOME'
+export EDITOR=emacs
+
+export TERM="alacritty"
+
