@@ -1,0 +1,39 @@
+# -*- mode: snippet -*-
+# name: cyg.h
+# key: cyg
+# --
+
+#ifndef CYG_H_
+#define CYG_H_
+
+/* common headers */
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* short alias for common types */
+#include <stddef.h>    /* size_t */
+#include <stdint.h>    /* various int types */
+typedef int8_t i8;
+typedef int32_t i32;
+typedef ptrdiff_t isize;
+
+typedef uint8_t u8;
+typedef uint16_t u16;
+typedef uint32_t u32;
+typedef uint64_t u64;
+typedef size_t usize;
+
+/* helper macros */
+#define perr(...)                                                             \
+  do                                                                          \
+    {                                                                         \
+      fprintf (stderr, "%s:%d:%s():error: ", __FILE__, __LINE__, __func__);   \
+      fprintf (stderr, __VA_ARGS__);                                          \
+    }                                                                         \
+  while (0)
+
+
+#endif /* CYG_H_ */
