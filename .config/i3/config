@@ -179,6 +179,8 @@ bindsym $mod+Left exec --no-startup-id "fest ~/.config/fest/pic.list ~/.config/f
 bindsym $mod+Right exec --no-startup-id "fest ~/.config/fest/pic.list ~/.config/fest/id -n"
 
 ## Startups
+exec --no-startup-id "~/.config/i3/xmodmap &"
+exec --no-startup-id "xcape -t 120 -e 'Control_L=Escape"
 exec --no-startup-id "redshift"
 exec --no-startup-id "fcitx5"
 exec --no-startup-id "blueman-applet"
