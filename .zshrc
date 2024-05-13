@@ -106,7 +106,7 @@ export TERM="alacritty"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='emacs'
+  export EDITOR='emacsclient -c'
 fi
 
 # Compilation flags
