@@ -31,6 +31,7 @@ ZSH_THEME_RANDOM_IGNORED=(
   apple
   jnrowe
   humza
+  emotty
 )
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
