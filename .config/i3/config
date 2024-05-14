@@ -169,6 +169,7 @@ bindsym $mod+Left exec --no-startup-id "fest ~/.config/fest/pic.list ~/.config/f
 bindsym $mod+Right exec --no-startup-id "fest ~/.config/fest/pic.list ~/.config/fest/id -n"
 
 ## Startups
+exec --no-startup-id "xrdb -merge ~/.Xresources"
 exec --no-startup-id "~/.config/i3/xmodmap &"
 exec --no-startup-id "emacs --daemon"
 exec --no-startup-id "redshift"
