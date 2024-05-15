@@ -121,6 +121,7 @@ alias l="ls -lah"
 alias t="tree"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
+alias sus="systemctl suspend"
 
 # .config management
 # This amazing solution is copied from here:
