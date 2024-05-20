@@ -106,9 +106,13 @@
 	 ("C-'" . cyg/next-file)
 	 )
   :custom
-  (org-agenda-files '("~/org" "~/org/agenda" "~/org/notes" "~/org/roam" "~/org/roam/daily"))
+  (org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
   (org-startup-with-inline-images t)
   (org-edit-src-content-indentation 0)
+  :config
+  (setq org-todo-keywords
+	'((sequence "TODO(t!)" "NEXT(n!)" "PROJ(p)" "WAITING(w!)" "SOMEDAY(s!)" "|" "DONE(d!)" "CANCELED(c@)" "DELEGATED(x@)")))
+  (setq org-log-into-drawer "LOGBOOK")
   )
 
 ;; allow drag & drop images into org mode
@@ -775,3 +779,5 @@ If the new path's directories does not exist, create them."
 ;;;   Built-in customization framework
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq custom-file "~/.config/emacs/custom.el")
+(load custom-file)
