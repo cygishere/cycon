@@ -122,6 +122,7 @@ alias t="tree"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias sus="systemctl suspend"
+alias d="dict -d wn"
 
 # .config management
 # This amazing solution is copied from here:
